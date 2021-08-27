@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/header/Header'
 import styled from 'styled-components'
-import Client from './components/scene-client.gif'
+import Hero from './components/hero/Hero'
 
 
 function App() {
@@ -10,12 +10,7 @@ function App() {
       <Header />
     
       <Main>
-        <p>Sit asperiores exercitationem vel tenetur exercitationem Facilis minima quisquam quaerat commodi reiciendis Ipsum facere aspernatur numquam explicabo provident iusto perferendis. Consectetur quas porro modi nemo quae Numquam rem magnam sit</p>
-        <p>Sit asperiores exercitationem vel tenetur exercitationem Facilis minima quisquam quaerat commodi reiciendis Ipsum facere aspernatur numquam explicabo provident iusto perferendis. Consectetur quas porro modi nemo quae Numquam rem magnam sit</p>
-        <p>Sit asperiores exercitationem vel tenetur exercitationem Facilis minima quisquam quaerat commodi reiciendis Ipsum facere aspernatur numquam explicabo provident iusto perferendis. Consectetur quas porro modi nemo quae Numquam rem magnam sit</p>
-        <p>Sit asperiores exercitationem vel tenetur exercitationem Facilis minima quisquam quaerat commodi reiciendis Ipsum facere aspernatur numquam explicabo provident iusto perferendis. Consectetur quas porro modi nemo quae Numquam rem magnam sit</p>
-        <p>Sit asperiores exercitationem vel tenetur exercitationem Facilis minima quisquam quaerat commodi reiciendis Ipsum facere aspernatur numquam explicabo provident iusto perferendis. Consectetur quas porro modi nemo quae Numquam rem magnam sit</p>
-        <p>Sit asperiores exercitationem vel tenetur exercitationem Facilis minima quisquam quaerat commodi reiciendis Ipsum facere aspernatur numquam explicabo provident iusto perferendis. Consectetur quas porro modi nemo quae Numquam rem magnam sit</p>
+        <Hero />
         <p>Sit asperiores exercitationem vel tenetur exercitationem Facilis minima quisquam quaerat commodi reiciendis Ipsum facere aspernatur numquam explicabo provident iusto perferendis. Consectetur quas porro modi nemo quae Numquam rem magnam sit</p>
       </Main>
     </div>
