@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header/Header'
 import styled from 'styled-components'
 import Hero from './components/hero/Hero'
+import SearchBar from './components/searchbar/SearchBar'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
     
       <Main>
         <Hero />
+        <SearchBar />
 
         <p>Dolor sit temporibus eius blanditiis officia Maxime dolorum dolorem animi sequi vero quia. Cupiditate soluta quo repellendus nemo reprehenderit Aliquam ex dolore illo est soluta quos repudiandae Animi consequatur adipisci</p>
         <p>Dolor sit temporibus eius blanditiis officia Maxime dolorum dolorem animi sequi vero quia. Cupiditate soluta quo repellendus nemo reprehenderit Aliquam ex dolore illo est soluta quos repudiandae Animi consequatur adipisci</p>
@@ -27,8 +29,6 @@ const Main = styled.main`
   margin:auto;
   overflow:hidden;
   font-size:2em;
-  background-color:#ea5244;
-
 `
 
 export default App;
