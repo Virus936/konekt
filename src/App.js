@@ -3,6 +3,7 @@ import Header from './components/header/Header'
 import styled from 'styled-components'
 import Hero from './components/hero/Hero'
 import SearchBar from './components/searchbar/SearchBar'
+import Description from './components/description/Description'
 
 function App() {
   return (
@@ -12,12 +13,10 @@ function App() {
       <Main>
         <Hero />
         <SearchBar />
+        <Description />
 
-        <p>Dolor sit temporibus eius blanditiis officia Maxime dolorum dolorem animi sequi vero quia. Cupiditate soluta quo repellendus nemo reprehenderit Aliquam ex dolore illo est soluta quos repudiandae Animi consequatur adipisci</p>
-        <p>Dolor sit temporibus eius blanditiis officia Maxime dolorum dolorem animi sequi vero quia. Cupiditate soluta quo repellendus nemo reprehenderit Aliquam ex dolore illo est soluta quos repudiandae Animi consequatur adipisci</p>
-        <p>Dolor sit temporibus eius blanditiis officia Maxime dolorum dolorem animi sequi vero quia. Cupiditate soluta quo repellendus nemo reprehenderit Aliquam ex dolore illo est soluta quos repudiandae Animi consequatur adipisci</p>
-        <p>Dolor sit temporibus eius blanditiis officia Maxime dolorum dolorem animi sequi vero quia. Cupiditate soluta quo repellendus nemo reprehenderit Aliquam ex dolore illo est soluta quos repudiandae Animi consequatur adipisci</p>
-        <p>Sit asperiores exercitationem vel tenetur exercitationem Facilis minima quisquam quaerat commodi reiciendis Ipsum facere aspernatur numquam explicabo provident iusto perferendis. Consectetur quas porro modi nemo quae Numquam rem magnam sit</p>
+
+
       </Main>
     </div>
   );
@@ -28,7 +27,11 @@ const Main = styled.main`
   align-items:center;
   margin:auto;
   overflow:hidden;
-  font-size:2em;
+  p{
+    margin-bottom:2em;
+    white-space:normal;
+
+  }
 `
 
 export default App;
