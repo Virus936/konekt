@@ -5,6 +5,7 @@ import Hero from './components/hero/Hero'
 import SearchBar from './components/searchbar/SearchBar'
 import Description from './components/description/Description'
 import HowItWork from './components/howitwork/HowItWork'
+import Candidature from './components/candidature/Candidature'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <SearchBar />
         <Description />
         <HowItWork />
+        <Candidature />
 
 
 
