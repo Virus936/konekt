@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Hero from './components/hero/Hero'
 import SearchBar from './components/searchbar/SearchBar'
 import Description from './components/description/Description'
+import HowItWork from './components/howitwork/HowItWork'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <SearchBar />
         <Description />
+        <HowItWork />
 
 
 
