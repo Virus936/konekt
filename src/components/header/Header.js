@@ -54,14 +54,16 @@ const Nav = styled.nav`
 
   &>div{
     text-transform: uppercase;
-    padding: 10px;
     cursor:pointer;
     &:last-child{
       background-color:${color.primary};
+      padding:10px;
+      color:white;
     }
     a{
       display:block;
       text-decoration:none;
+      padding:10px;
       color:inherit;
     }
   }
@@ -85,9 +87,6 @@ const Nav = styled.nav`
       }
       &:last-child{
         background-color:inherit;
-      }
-      a{
-      padding:10px;
       }
     }
     &.active{

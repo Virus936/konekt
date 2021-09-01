@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import styled from 'styled-components'
-import Client from '../scene-client.gif'
-import Candidat from '../scene-candidat.jpg'
+import Client from './scene-client.gif'
+import Candidat from './scene-candidat.jpg'
 import device from '../size'
 
 function Hero(){
