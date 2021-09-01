@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 import logo from './logo.png'
 import device from '../size'
 import color from '../color'
@@ -10,19 +11,19 @@ function Header(){
   return(
     <Container>
       <Wrapper>
-        <div><Logo src={logo} alt="" /></div>
+        <div><Link to='/'><Logo src={logo} alt="" /></Link></div>
         {
           <HamburgerMenu onClick={ () => setActive(!active) }>
           <FiMenu />
           </HamburgerMenu>
           }
-        <Nav className={active&&'active'} active={active}>
-          <div>qui sommes-nous ? </div>
-          <div>notre expertise</div>
-          <div>nos offres</div>
-          <div>vous recrutez</div>
-          <div>blog</div>
-          <div>contact</div>
+        <Nav className={active&&'active'} onClick={() => setActive(!active)} active={active}>
+          <div><Link to="/about-us">qui sommes-nous ? </Link></div>
+          <div><Link to="/expertise">notre expertise</Link></div>
+          <div><Link to='/offres'>nos offres</Link></div>
+          <div><Link to="/recrutement">vous recrutez</Link></div>
+          <div><Link to='/blog'>blog</Link></div>
+          <div><Link to="/contact">contact</Link></div>
           <div>connexion</div>
         </Nav>
       </Wrapper>
@@ -58,6 +59,11 @@ const Nav = styled.nav`
     &:last-child{
       background-color:${color.primary};
     }
+    a{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+    }
   }
 
   @media ${device.mobile} {
@@ -73,11 +79,15 @@ const Nav = styled.nav`
 
     &>div{
       width:19em;
+      padding:0;
       &:hover{
         background:#333333;
       }
       &:last-child{
         background-color:inherit;
+      }
+      a{
+      padding:10px;
       }
     }
     &.active{
