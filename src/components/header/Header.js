@@ -54,6 +54,7 @@ const Nav = styled.nav`
   &>div{
     text-transform: uppercase;
     padding: 10px;
+    cursor:pointer;
     &:last-child{
       background-color:${color.primary};
     }
@@ -72,7 +73,6 @@ const Nav = styled.nav`
 
     &>div{
       width:19em;
-      cursor:pointer;
       &:hover{
         background:#333333;
       }

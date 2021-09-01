@@ -6,6 +6,7 @@ import SearchBar from './components/searchbar/SearchBar'
 import Description from './components/description/Description'
 import HowItWork from './components/howitwork/HowItWork'
 import Candidature from './components/candidature/Candidature'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 
 
       </Main>
+      <Footer />
     </div>
   );
 }
