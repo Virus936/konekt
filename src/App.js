@@ -1,12 +1,9 @@
 import './App.css';
 import Header from './components/header/Header'
 import styled from 'styled-components'
-import Hero from './components/hero/Hero'
-import SearchBar from './components/searchbar/SearchBar'
-import Description from './components/description/Description'
-import HowItWork from './components/howitwork/HowItWork'
-import Candidature from './components/candidature/Candidature'
 import Footer from './components/footer/Footer'
+import Landing from './pages/landing/Landing'
+
 
 function App() {
   return (
@@ -14,14 +11,7 @@ function App() {
       <Header />
     
       <Main>
-        <Hero />
-        <SearchBar />
-        <Description />
-        <HowItWork />
-        <Candidature />
-
-
-
+        <Landing />
       </Main>
       <Footer />
     </div>
@@ -36,7 +26,6 @@ const Main = styled.main`
   p{
     margin-bottom:2em;
     white-space:normal;
-
   }
 `
 
