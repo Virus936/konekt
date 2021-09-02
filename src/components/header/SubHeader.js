@@ -14,6 +14,8 @@ const Container = styled.header`
   display:flex;
   width:100%;
   justify-content:center;
+  text-transform:uppercase;
+  font-weight:bold;
   align-items:center;
   background-color:${color.primary};
   color:white;

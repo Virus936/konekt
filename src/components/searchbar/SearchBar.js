@@ -33,6 +33,7 @@ function SearchBar(){
               }else if(skill.toLowerCase().includes(filter.toLowerCase())){
                 return skill
               }
+              return false
             }).map(e => {
               return <div key={e} onClick={i=> {setActive(!active); setSelector(e) }}>{e}</div>
               })
