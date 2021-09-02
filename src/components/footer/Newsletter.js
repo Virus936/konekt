@@ -24,6 +24,7 @@ const Container = styled.div`
 
       input{
         display:flex;
+        flex:1 1;
         border:none;
         padding-left:1em;
         font-weight:bold;
@@ -36,6 +37,7 @@ const Container = styled.div`
         color:white;
         font-weight:bold;
         flex:1;
+          max-width:70px;
         
       }
     }

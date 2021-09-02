@@ -1,6 +1,5 @@
-import React, {useState} from "react"
+import React, {} from "react"
 import styled from 'styled-components'
-import color from '../color'
 import Candidat from './Candidat'
 import Newsletter from './Newsletter'
 import Contact from './Contact'
@@ -17,6 +16,7 @@ function Footer(){
 
 const Container = styled.footer`
   display:flex;
+  flex-wrap:wrap;
   margin-top:30px;
   background-color:#25262a;
   color:#757575;
@@ -37,12 +37,7 @@ const Container = styled.footer`
     p{
       margin-bottom:1em;
     }
-    &.contact{
-      
-    }
   }
-
-
 `
 
 export default Footer

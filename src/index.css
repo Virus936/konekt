@@ -11,6 +11,10 @@ body {
 
 }
 
+p,h1{
+  color:#757575;
+  white-space:pre-line;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
