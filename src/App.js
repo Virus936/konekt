@@ -1,6 +1,5 @@
 import './App.css';
 import Header from './components/header/Header'
-import styled from 'styled-components'
 import Footer from './components/footer/Footer'
 import Landing from './pages/landing/Landing'
 import AboutUs from './pages/aboutUs/AboutUs'
@@ -23,7 +22,6 @@ function App() {
       <Router>
         <Header />
 
-        <Main>
           <Switch>
             <Route path='/expertise'>
               <Expertise />
@@ -52,22 +50,10 @@ function App() {
               <Landing />
             </Route>
           </Switch>
-        </Main>
         <Footer />
       </Router>
     </div>
   );
 }
-const Main = styled.main`
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  margin:auto;
-  overflow:hidden;
-  p{
-    margin-bottom:2em;
-    white-space:normal;
-  }
-`
 
 export default App;

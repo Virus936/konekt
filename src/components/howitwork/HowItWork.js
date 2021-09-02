@@ -1,11 +1,13 @@
-import React, {useState} from "react"
+import React, {} from "react"
 import styled from 'styled-components'
 import HowItem from './HowItem'
+import background from './comment-marche.png'
 import comprehension from './comprehension.png'
 import identification from './identification.png'
 import evaluation from './evaluation.png'
 import selection from './selection.png'
 import suivi from './suivi.png'
+
 
 function HowItWork(){
   return(
@@ -45,6 +47,7 @@ function HowItWork(){
 }
 
 const Container = styled.section`
+  background-image:url(${background});
   width:100%;
   padding:10%;
   color:white;
