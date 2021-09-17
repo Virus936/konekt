@@ -2,6 +2,7 @@ import React, {} from "react"
 import SubHeader from '../../components/header/SubHeader'
 import styled from 'styled-components'
 import SortingForm from '../../components/form/SortingForm'
+import Offre from '../../components/offre/Offre'
 
 function Offres(){
   return(
@@ -10,8 +11,17 @@ function Offres(){
       <Container>
         <SortingForm />
         <div>
-          <p>Sit suscipit velit ipsum recusandae culpa? Quidem dolor libero animi</p>
-          <p>Adipisicing cupiditate molestiae asperiores eaque provident! Odio?</p>
+          <Offre 
+            title="QA Engineer – Price Management Platform"
+            date="21/12/21"
+            skill="javascript"
+          />
+          <Offre 
+            title="Data Analyst"
+            date="09/04/86"
+            skill="python"
+            localisation="paris"
+          />
         </div>
 
       </Container>
@@ -27,7 +37,6 @@ const Container = styled.div`
   align-items:flex-start;
 
   &>div{
-    background-color:pink;
     flex:1 ;
   }
 
