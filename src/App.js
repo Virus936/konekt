@@ -6,7 +6,7 @@ import AboutUs from './pages/aboutUs/AboutUs'
 import Blog from './pages/blog/Blog'
 import Expertise from './pages/expertise/Expertise'
 import Offres from './pages/offres/Offres'
-import Recrutement from './pages/contact/Contact'
+import Recrutement from './pages/recrutement/Recrutement'
 import Contact from './pages/contact/Contact'
 
 import {
