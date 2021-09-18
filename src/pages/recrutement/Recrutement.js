@@ -68,15 +68,24 @@ function Recrutement(){
           </ul>
         </RecrutItem>
       </Container>
+      <Form>
+        <input type="text"  placeholder="Nom" />
+        <input type="text"  placeholder="Prénom" />
+        <input type="text"  placeholder="Objet de votre message" />
+        <input type="email"  placeholder="Email" />
+        <input type="tel"  placeholder="Téléphone" />
+        <textarea id="" name="" cols="30" rows="10"></textarea>
+
+        <button>Contacter</button>
+      </Form>
     </>
     )
 }
 
-
 const Container = styled.section`
   display:grid;
   width:min(1200px,90%);
-  margin: 100px auto;
+  margin:90px auto;
   grid-gap:50px;
   grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
 
@@ -104,6 +113,54 @@ const RecrutItem = styled.article`
     list-style-type:"- ";
     list-style-position: inside;
   }
+`
+const Form = styled.form`
+  display:grid;
+  grid-gap:10px;
+  width:min(500px,90%);
+  margin:auto;
+  input{
+    padding:.5em;
+    text-align:center;
+    border-radius:3px;
+    border:solid 1px grey;
+    font-weight:bold;
+    font-size:1em;
+
+    &::placeholder{
+      color:darkgrey;
+    }
+
+    &:focus{
+      border:solid 1px ${color.primary};
+      outline:1px solid ${color.primary};
+      
+      &::placeholder{
+        color:transparent;
+      }
+    }
+  }
+  textarea{
+    padding:5px;
+    border-radius: 3px;
+    border:solid 1px grey;
+    &:focus{
+      border:solid 1px ${color.primary};
+      outline:1px solid ${color.primary};
+    }
+
+  }
+  button{
+    background-color:${color.primary};
+    color:snow;
+    padding:.5em;
+    text-align:center;
+    border-radius:3px;
+    font-weight:bold;
+    font-size:1em;
+    border:none;
+  }
+
 `
 
 export default Recrutement
