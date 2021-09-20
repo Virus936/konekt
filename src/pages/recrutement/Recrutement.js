@@ -68,7 +68,8 @@ function Recrutement(){
           </ul>
         </RecrutItem>
       </Container>
-      <Form>
+      <Form onSubmit={e=>e.preventDefault()}>
+        <h2>Précision pour vos recrutement</h2>
         <input type="text"  placeholder="Nom" />
         <input type="text"  placeholder="Prénom" />
         <input type="text"  placeholder="Objet de votre message" />
@@ -84,9 +85,10 @@ function Recrutement(){
 
 const Container = styled.section`
   display:grid;
-  width:min(1200px,90%);
+  width:min(1400px,90%);
   margin:90px auto;
-  grid-gap:50px;
+  grid-row-gap:10em;
+  grid-column-gap:50px;
   grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
 
 `
@@ -119,16 +121,21 @@ const Form = styled.form`
   grid-gap:10px;
   width:min(500px,90%);
   margin:auto;
+  h2{
+    text-align:center;
+    letter-spacing:1px;
+    color:#424242;
+  }
   input{
     padding:.5em;
     text-align:center;
     border-radius:3px;
-    border:solid 1px grey;
+    border:solid 1px #ccc;
     font-weight:bold;
     font-size:1em;
 
     &::placeholder{
-      color:darkgrey;
+      color:#ccc;
     }
 
     &:focus{
@@ -143,7 +150,7 @@ const Form = styled.form`
   textarea{
     padding:5px;
     border-radius: 3px;
-    border:solid 1px grey;
+    border:solid 1px #ccc;
     &:focus{
       border:solid 1px ${color.primary};
       outline:1px solid ${color.primary};

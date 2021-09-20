@@ -57,13 +57,13 @@ const Nav = styled.nav`
     cursor:pointer;
     &:last-child{
       background-color:${color.primary};
-      padding:10px;
+      padding:15px;
       color:white;
     }
     a{
       display:block;
       text-decoration:none;
-      padding:10px;
+      padding:15px;
       color:inherit;
     }
   }
@@ -108,7 +108,7 @@ const Container = styled.header`
   display:flex;
   flex-direction: row;
   justify-content:center;
-  height:60px;
+  height:86px;
 
   background:white;
 `

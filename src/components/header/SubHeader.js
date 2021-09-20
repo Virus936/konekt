@@ -13,14 +13,14 @@ function SubHeader({title}){
 const Container = styled.header`
   display:flex;
   width:100%;
-  justify-content:center;
+  padding-left:max(5%, calc(100vw - 1400px)/2);
   text-transform:uppercase;
   font-weight:bold;
   align-items:center;
-  background-color:${color.primary};
+  background-color:${color.secondary};
   color:white;
   font-size:2em;
-  height:4em;
+  height:122px;
 `
 
 export default SubHeader
