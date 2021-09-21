@@ -1,6 +1,7 @@
 import React, { } from "react"
 import SubHeader from '../../components/header/SubHeader'
 import styled from 'styled-components'
+import FormContact from '../../components/form/FormContact'
 import { SiGoogletranslate } from 'react-icons/si'
 import { RiPencilRuler2Line } from 'react-icons/ri'
 import { BiTimer } from 'react-icons/bi'
@@ -68,17 +69,7 @@ function Recrutement(){
           </ul>
         </RecrutItem>
       </Container>
-      <Form onSubmit={e=>e.preventDefault()}>
-        <h2>Précision pour vos recrutement</h2>
-        <input type="text"  placeholder="Nom" />
-        <input type="text"  placeholder="Prénom" />
-        <input type="text"  placeholder="Objet de votre message" />
-        <input type="email"  placeholder="Email" />
-        <input type="tel"  placeholder="Téléphone" />
-        <textarea id="" name="" cols="30" rows="10"></textarea>
-
-        <button>Contacter</button>
-      </Form>
+      <FormContact title="Précision pour vos recrutement" />
     </>
     )
 }
@@ -115,59 +106,6 @@ const RecrutItem = styled.article`
     list-style-type:"- ";
     list-style-position: inside;
   }
-`
-const Form = styled.form`
-  display:grid;
-  grid-gap:10px;
-  width:min(500px,90%);
-  margin:auto;
-  h2{
-    text-align:center;
-    letter-spacing:1px;
-    color:#424242;
-  }
-  input{
-    padding:.5em;
-    text-align:center;
-    border-radius:3px;
-    border:solid 1px #ccc;
-    font-weight:bold;
-    font-size:1em;
-
-    &::placeholder{
-      color:#ccc;
-    }
-
-    &:focus{
-      border:solid 1px ${color.primary};
-      outline:1px solid ${color.primary};
-      
-      &::placeholder{
-        color:transparent;
-      }
-    }
-  }
-  textarea{
-    padding:5px;
-    border-radius: 3px;
-    border:solid 1px #ccc;
-    &:focus{
-      border:solid 1px ${color.primary};
-      outline:1px solid ${color.primary};
-    }
-
-  }
-  button{
-    background-color:${color.primary};
-    color:snow;
-    padding:.5em;
-    text-align:center;
-    border-radius:3px;
-    font-weight:bold;
-    font-size:1em;
-    border:none;
-  }
-
 `
 
 export default Recrutement
