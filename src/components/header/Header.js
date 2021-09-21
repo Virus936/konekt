@@ -104,6 +104,7 @@ const Logo = styled.img`
 const Container = styled.header`
   position:sticky;
   top:0;
+  z-index:2;
 
   display:flex;
   flex-direction: row;

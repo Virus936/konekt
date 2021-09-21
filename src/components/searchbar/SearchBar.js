@@ -82,9 +82,11 @@ const Container = styled.form`
   .submitButton{
     display:flex;
     align-items:center;
-    background-color:pink;
+    background-color:red;
     input{
       margin:0 30px;
+      font-weight:bold;
+      color:white;
     }
   }
 
@@ -106,7 +108,8 @@ const Container = styled.form`
           z-index:2;
 
           div:hover{
-            background:pink;
+            background:green;
+            color:white;
           }
 
         }
