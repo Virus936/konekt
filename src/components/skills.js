@@ -6,6 +6,6 @@ const skills = [
   'django',
   'python',
   'flask',
-]
+];
 
-export default skills
+export default skills;

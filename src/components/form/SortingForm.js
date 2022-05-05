@@ -1,15 +1,14 @@
-import React, {} from "react"
-import styled from 'styled-components'
-import Date from './Date'
-import Skill from './Skill'
-import color from '../color.js'
+import React from 'react';
+import styled from 'styled-components';
+import Date from './Date';
+import Skill from './Skill';
+import color from '../color.js';
 
-function SortingForm(){
-  return(
-    <Form onSubmit={e=> e.preventDefault()}>
-      <Date /> 
+function SortingForm() {
+  return (
+    <Form onSubmit={(e) => e.preventDefault()}>
+      <Date />
       <Skill />
-
 
       <details>
         <summary>Salaire proposé</summary>
@@ -62,57 +61,56 @@ function SortingForm(){
         </div>
       </details>
     </Form>
-    )
+  );
 }
 
 const Form = styled.form`
+  display: flex;
+  background-color: ${color.primary};
+  color: white;
+  padding: 1em;
+  flex: 0 0 300px;
+  flex-direction: column;
+  details {
+    max-height: 20px;
+    width: 100%;
+    transition: max-height 1s linear;
+    overflow: hidden;
+    summary {
+      display: flex;
+      list-style: none;
+      cursor: pointer;
 
-  display:flex;
-  background-color:${color.primary};
-  color:white;
-  padding:1em;
-  flex: 0 0 300px ;
-  flex-direction:column;
-  details{
-    max-height:20px;
-    width:100%;
-    transition:max-height 1s linear;
-    overflow:hidden;
-    summary{
-      display:flex;
-      list-style:none;
-      cursor:pointer;
-
-      &::after{
-        display:block;
-        margin-left:auto;
-        content:'+';
+      &::after {
+        display: block;
+        margin-left: auto;
+        content: '+';
       }
-      &:hover{
-        background-color:rgba(255,255,255,.2);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
       }
     }
-    div{
-      display:flex;
-      padding-left:1em;
-      gap:1em;
-      label{
-        width:100%;
+    div {
+      display: flex;
+      padding-left: 1em;
+      gap: 1em;
+      label {
+        width: 100%;
       }
-      &:hover{
-        background-color:rgba(255,255,255,.2);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
       }
     }
-    &[open]{
-      max-height:900px;
-      summary::after{
-        content:'-';
+    &[open] {
+      max-height: 900px;
+      summary::after {
+        content: '-';
       }
     }
   }
-  input{
-    display:block;
+  input {
+    display: block;
   }
-`
+`;
 
-export default SortingForm
+export default SortingForm;
